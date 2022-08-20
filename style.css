@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto" sans-serif;
+}
+header{
+    position:fixed;
+    background: #22242A ;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+.left-area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+.left-area span{
+    color: #2471A3;
+}
+
+.logout-btn{
+    padding: 5px;
+    text-decoration: none;
+    background:#2471A3;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius:2px ;
+    transition: 0.4s;
+    transition-property:background;
+
+}
+.logout-btn:hover{
+    background:#2471A3;
+    
+
+}
+.sidebar{
+    background: #2F323A;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .profile-image{
+    height: 150px;
+    width: 120px;
+    margin-bottom: 10px;
+    border-radius:50%;
+   
+}
+.sidebar h4{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    width: 100%;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    transition-property: background-color;
+
+}
+.sidebar a:hover{
+    background-color: #3db7cf;
+
+}
+.sidebar i{
+    padding-right: 10px;
+}
+label #sidebar-btn{
+    z-index: 1;
+    color:#fff;
+    position:fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size:20px ;
+    margin: 5px 0;
+    transition: 0.4s;
+    transition-property:color;
+   
+}
+label #sidebar-btn:hover{
+    color: #227188 ;
+}
+#check:checked ~ .sidebar{
+    left: -190px;
+} 
+
+#check:checked ~ .sidebar a span{
+    display: none;
+} 
+#check:checked ~ .sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+
+}
+
+.content{
+    margin-left: 250px;
+    background: url(image/5.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+
+}
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+#check{
+    display: none;
+}
